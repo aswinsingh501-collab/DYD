@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 10 - Responsive E-commerce Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+<!-- NAVBAR -->
+<div style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background:black;
+    color:white;
+    flex-wrap:wrap;
+">
+
+    <!-- Logo -->
+    <div style="font-size:22px; font-weight:bold;">ShopEase</div>
+
+    <!-- Menu Items -->
+    <div id="menu" style="
+        display:flex;
+        gap:20px;
+        font-size:14px;
+    ">
+        <a href="#" style="color:white; text-decoration:none;">Home</a>
+        <a href="#" style="color:white; text-decoration:none;">Products</a>
+        <a href="#" style="color:white; text-decoration:none;">Categories</a>
+        <a href="#" style="color:white; text-decoration:none;">Deals</a>
+        <a href="#" style="color:white; text-decoration:none;">Contact</a>
+    </div>
+
+    <!-- Right Side -->
+    <div style="
+        display:flex;
+        gap:20px;
+        font-size:14px;
+    ">
+        <span>Cart 🛒</span>
+        <a href="#" style="color:white; text-decoration:none;">Login</a>
+    </div>
+</div>
+
+<!-- HERO CONTENT -->
+<div style="padding:20px;">
+    <h2>Welcome to ShopEase!</h2>
+    <p>Your one-stop destination for all shopping needs.</p>
+</div>
+
+<!-- MEDIA QUERY (INLINE STYLE USING <style>) -->
+<style>
+@media (max-width: 600px){
+    #menu {
+        width:100%;
+        justify-content:space-around;
+        margin-top:10px;
+    }
+}
+</style>
+
+</body>
+</html>
