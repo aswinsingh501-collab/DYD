@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TasteBite Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: #1f1f1f;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #e9c46a;
+        }
+
+        /* Hero */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            letter-spacing: 3px;
+        }
+
+        .hero .divider {
+            margin: 20px auto;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Decorative Divider */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            width: 80px;
+            height: 1px;
+            background: #e9c46a;
+            margin: 0 10px;
+        }
+
+        .divider span {
+            color: #e9c46a;
+            font-size: 20px;
+        }
+
+        /* Section */
+        section {
+            padding: 70px 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        /* Menu */
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .menu-item span {
+            color: #e76f51;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer span {
+            color: #e9c46a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍽️ TasteBite</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Welcome to TasteBite</h2>
+        <div class="divider"><span>✦</span></div>
+        <p>Where every flavor tells a story</p>
+    </div>
+</div>
+
+<section id="about">
+    <h2>❖ About Us ❖</h2>
+    <div class="divider"><span>🌿</span></div>
+    <p>
+        At TasteBite, we believe food is not just a meal,
+        it is an experience crafted with passion, freshness,
+        and love.
+    </p>
+</section>
+
+<section id="menu">
+    <h2>✦ Our Special Menu ✦</h2>
+    <div class="divider"><span>🍴</span></div>
+
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Grilled Chicken</h3>
+            <p>Fresh herbs & smoky flavors</p>
+            <div class="divider"><span>❖</span></div>
+            <span>$12.99</span>
+        </div>
+
+        <div class="menu-item">
+            <h3>Cheese Burger</h3>
+            <p>Classic taste with melted cheese</p>
+            <div class="divider"><span>❖</span></div>
+            <span>$9.99</span>
+        </div>
+
+        <div class="menu-item">
+            <h3>Pasta Alfredo</h3>
+            <p>Creamy, rich & comforting</p>
+            <div class="divider"><span>❖</span></div>
+            <span>$11.49</span>
+        </div>
+        <div class="menu-item">
+            <h3>Caesar Salad</h3>
+            <p>Crisp greens with tangy dressing</p>
+            <div class="divider"><span>❖</span>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>✦ Contact Us ✦</h2>
+    <div class="divider"><span>📍</span></div>
+    <p>123 Food Street, City</p>
+    <p>📞 +91 7248888322</p>
+    <p>✉️ contact@tastebite.com</p>
+</section>
+
+<footer>
+    <p><span>✦</span> TasteBite Restaurant © 2025 <span>✦</span></p>
+</footer>
+
+</body>
+</html>
